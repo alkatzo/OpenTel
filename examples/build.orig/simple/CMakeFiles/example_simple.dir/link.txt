@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/example_simple.dir/main.cc.o -o example_simple  ../common/foo_library/libcommon_foo_library.a /usr/local/lib/libopentelemetry_trace.a /usr/local/lib/libopentelemetry_exporter_ostream_span.a /usr/local/lib/libopentelemetry_trace.a /usr/local/lib/libopentelemetry_resources.a /usr/local/lib/libopentelemetry_common.a 

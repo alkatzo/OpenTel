@@ -1,0 +1,2 @@
+/usr/bin/ar qc libexample_grpc_proto.a CMakeFiles/example_grpc_proto.dir/messages.grpc.pb.cc.o CMakeFiles/example_grpc_proto.dir/messages.pb.cc.o
+/usr/bin/ranlib libexample_grpc_proto.a

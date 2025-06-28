@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:latest
+    container_name: otel-collector
+    volumes:
+      - ./otel-config.yaml:/etc/otel/config.yaml
+      - /:/hostfs:ro  # Allow access to host metrics when collector is containerized
+    command: ["--config=/etc/otel/config.yaml"]
+    ports:
+      - "8889:8889"  # Exposes metrics for Prometheus to scrape
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+    ports:
+      - "9090:9090"
+    restart: unless-stopped
+

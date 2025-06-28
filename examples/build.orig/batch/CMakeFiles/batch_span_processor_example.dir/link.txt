@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/batch_span_processor_example.dir/main.cc.o -o batch_span_processor_example  /usr/local/lib/libopentelemetry_exporter_ostream_span.a /usr/local/lib/libopentelemetry_trace.a /usr/local/lib/libopentelemetry_resources.a /usr/local/lib/libopentelemetry_common.a 
